@@ -17,8 +17,8 @@ class DirectorDAO:
         self.session.commit()
         return ent
 
-    def delete(self, rid):
-        director = self.get_one(rid)
+    def delete(self, did):
+        director = self.get_one(did)
         self.session.delete(director)
         self.session.commit()
 
